@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Audrey Conciergerie, votre partenaire de gestion locative haut de gamme. +42% de revenus en moyenne, 97% de clients satisfaits. Estimation gratuite sous 24h."/>
+  <meta name="keywords" content="conciergerie, gestion locative, Airbnb, location saisonnière, revenus locatifs, conciergerie premium"/>
+  <meta property="og:title" content="Audrey Conciergerie — Gestion Locative Premium & Maximisation des Revenus"/>
+  <meta property="og:description" content="Audrey Conciergerie, votre partenaire de gestion locative haut de gamme. +42% de revenus en moyenne, 97% de clients satisfaits. Estimation gratuite sous 24h."/>
+  <meta property="og:type" content="website"/>
+  <title>Audrey Conciergerie — Gestion Locative Premium & Maximisation des Revenus</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<!-- ── Navigation ── -->
+<nav id="NAV" class="top">
+  <a class="nav-logo" href="index.html">
+    <div class="nav-logo-name">Audrey Conciergerie</div>
+    <div class="nav-logo-sub">Conciergerie Premium</div>
+  </a>
+  <ul class="nav-links"><li><a href="index.html" class="active">Accueil</a></li><li><a href="services.html">Services</a></li><li><a href="biens.html">Nos Biens</a></li><li><a href="apropos.html">À Propos</a></li><li><a href="contact.html">Contact</a></li></ul>
+  <a href="contact.html" class="nav-cta">Estimation gratuite</a>
+  <button class="nav-burger" onclick="openMob()"><span></span><span></span><span></span></button>
+</nav>
+<!-- ── Mobile menu ── -->
+<div id="MOB">
+  <button class="mob-close" onclick="closeMob()">✕</button>
+  <a href="index.html" onclick="closeMob()">Accueil</a>
+  <a href="services.html" onclick="closeMob()">Services</a>
+  <a href="biens.html" onclick="closeMob()">Nos Biens</a>
+  <a href="apropos.html" onclick="closeMob()">À Propos</a>
+  <a href="contact.html" onclick="closeMob()">Contact</a>
+  <a href="tel:+33780786725" class="mob-phone">07 80 78 67 25</a>
+</div>
+<!-- ── Popup devis ── -->
+<div class="popup-ov" id="POPUP_OV"></div>
+<div class="popup-box" id="POPUP">
+  <button class="popup-close" id="POPUP_CLOSE">✕</button>
+  <div class="popup-tag">Offre Exclusive</div>
+  <div class="popup-title">Estimation gratuite<br/>sous 24h</div>
+  <div class="popup-sub">Découvrez combien votre bien peut rapporter avec une gestion professionnelle.</div>
+  <a href="contact.html" class="popup-btn">✦ Recevoir mon estimation</a>
+  <div class="popup-dismiss" id="POPUP_DISMISS">Non merci, je préfère gérer seul</div>
+</div>
+<!-- ── Bannière cookies ── -->
+<div id="COOKIE">
+  <p class="cookie-text">
+    En poursuivant votre navigation, vous acceptez l'utilisation de cookies pour améliorer votre expérience.
+    <a href="#">En savoir plus</a>
+  </p>
+  <div class="cookie-actions">
+    <button class="cookie-accept" id="COOKIE_ACCEPT">Accepter</button>
+    <button class="cookie-refuse" id="COOKIE_REFUSE">Refuser</button>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<!-- REMPLACER PAR IMAGE RÉELLE DU CLIENT DEPUIS GOOGLE -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-content rv">
+    <div class="hero-badge"><div class="hero-badge-dot"></div>Conciergerie Privée · Île-de-France</div>
+    <h1 class="hero-title">
+      Votre bien,<br/>
+      <em>pleinement rentabilisé.</em>
+    </h1>
+    <p class="hero-sub">
+      Confiez votre bien à Audrey Conciergerie et profitez d'une gestion locative irréprochable.
+      Revenus optimisés, voyageurs enchantés, sérénité totale pour vous.
+    </p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn-or"><span>✦ Demander une estimation gratuite</span></a>
+      <a href="services.html" class="btn-wh"><span>Découvrir nos services</span></a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-val">+42%</div>
+        <div class="hero-stat-lbl">de revenus en moyenne</div>
+      </div>
+      <div>
+        <div class="hero-stat-val">97%</div>
+        <div class="hero-stat-lbl">de clients satisfaits</div>
+      </div>
+      <div>
+        <div class="hero-stat-val">72h</div>
+        <div class="hero-stat-lbl">pour être opérationnel</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Découvrir</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══ COMPTEURS ══ -->
+<div class="counters-band">
+  <div class="counter-item rv">
+    <div class="counter-val"><span data-target="42" data-suffix="%">0%</span></div>
+    <div class="counter-lbl">Augmentation revenus</div>
+  </div>
+  <div class="counter-item rv">
+    <div class="counter-val"><span data-target="1240" data-suffix="">0</span></div>
+    <div class="counter-lbl">Voyageurs satisfaits</div>
+  </div>
+  <div class="counter-item rv">
+    <div class="counter-val"><span data-target="85" data-suffix="+">0+</span></div>
+    <div class="counter-lbl">Biens gérés</div>
+  </div>
+  <div class="counter-item rv">
+    <div class="counter-val"><span data-target="97" data-suffix="%">0%</span></div>
+    <div class="counter-lbl">Satisfaction client</div>
+  </div>
+</div>
+
+<!-- ══ AVIS CLIENT ══ -->
+<section class="section section-beige">
+  <div class="section-center">
+    <div class="s-tag rv">Témoignage</div>
+    <h2 class="s-title rv">Ce que disent<br/><em>nos propriétaires</em></h2>
+  </div>
+  <div style="margin-top:52px">
+    <div class="review-card rv-s">
+      <div class="review-badge">5 étoiles Google</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">
+        "Depuis que j'ai confié mon appartement à Audrey, mes revenus ont littéralement explosé.
+        En seulement trois mois, j'ai constaté une hausse de 45% par rapport à ma gestion seule.
+        Mais au-delà des chiffres, c'est la sérénité absolue que j'ai gagnée. Audrey gère tout,
+        communique parfaitement et mes voyageurs repartent toujours enchantés. Je recommande
+        les yeux fermés."
+      </p>
+      <div style="display:flex;align-items:center;gap:14px">
+        <div style="width:46px;height:46px;background:var(--or4);border:1px solid var(--bdor);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:18px;color:var(--or)">S</div>
+        <div>
+          <div class="review-author-name">Sophie M.</div>
+          <div class="review-author-sub">Propriétaire — Appartement Paris 11ème</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CAROUSEL CE QUI NOUS DIFFÉRENCIE ══ -->
+<section class="diff-sec">
+  <div class="diff-header">
+    <div>
+      <div class="s-tag rv">Notre signature</div>
+      <h2 class="s-title rv">Ce qui nous<br/><em>différencie</em></h2>
+      <p class="s-desc rv">Un service d'exception, pensé pour les propriétaires exigeants qui veulent le meilleur pour leur patrimoine.</p>
+    </div>
+    <div class="diff-nav-row rv">
+      <div class="diff-hint">Défilement automatique</div>
+      <div class="diff-arrows">
+        <button class="diff-arrow" id="DIFF_PREV">←</button>
+        <button class="diff-arrow" id="DIFF_NEXT">→</button>
+      </div>
+    </div>
+  </div>
+  <div class="diff-progress-bar"><div class="diff-progress-fill" id="DIFF_PROG"></div></div>
+  <div class="diff-track" id="DIFF_TRACK">
+
+    <div class="diff-card">
+      <div class="diff-card-num">01</div>
+      <div class="diff-card-icon">✨</div>
+      <div class="diff-card-chip">Excellence</div>
+      <div class="diff-card-title">Gestion 100% déléguée</div>
+      <p class="diff-card-desc">De la mise en ligne de l'annonce au virement mensuel, Audrey orchestre chaque détail. Vous n'avez rien à faire, vous encaissez.</p>
+      <div class="diff-card-metric">
+        <div><div class="diff-metric-val">100%</div><div class="diff-metric-lbl">Délégation totale</div></div>
+        <div style="color:var(--or);font-size:20px">→</div>
+      </div>
+    </div>
+
+    <div class="diff-card">
+      <div class="diff-card-num">02</div>
+      <div class="diff-card-icon">📈</div>
+      <div class="diff-card-chip">Performance</div>
+      <div class="diff-card-title">Revenus maximisés</div>
+      <p class="diff-card-desc">Tarification dynamique, optimisation du calendrier, annonces multilingues premium. Nos propriétaires gagnent en moyenne 42% de plus.</p>
+      <div class="diff-card-metric">
+        <div><div class="diff-metric-val">+42%</div><div class="diff-metric-lbl">Revenus supplémentaires</div></div>
+        <div style="color:var(--or);font-size:20px">→</div>
+      </div>
+    </div>
+
+    <div class="diff-card">
+      <div class="diff-card-num">03</div>
+      <div class="diff-card-icon">⭐</div>
+      <div class="diff-card-chip">Satisfaction</div>
+      <div class="diff-card-title">Expérience 5 étoiles</div>
+      <p class="diff-card-desc">Accueil chaleureux, linge hôtelier premium, guide personnalisé du quartier. Vos voyageurs laissent des avis 5 étoiles, votre note grimpe.</p>
+      <div class="diff-card-metric">
+        <div><div class="diff-metric-val">4.97</div><div class="diff-metric-lbl">Note moyenne</div></div>
+        <div style="color:var(--or);font-size:20px">→</div>
+      </div>
+    </div>
+
+    <div class="diff-card">
+      <div class="diff-card-num">04</div>
+      <div class="diff-card-icon">🛡️</div>
+      <div class="diff-card-chip">Sécurité</div>
+      <div class="diff-card-title">Votre bien protégé</div>
+      <p class="diff-card-desc">Vérification des voyageurs, dépôt de garantie, état des lieux photographique, assurance partenaire. Votre patrimoine est entre de bonnes mains.</p>
+      <div class="diff-card-metric">
+        <div><div class="diff-metric-val">0€</div><div class="diff-metric-lbl">Dommages non couverts</div></div>
+        <div style="color:var(--or);font-size:20px">→</div>
+      </div>
+    </div>
+
+    <div class="diff-card">
+      <div class="diff-card-num">05</div>
+      <div class="diff-card-icon">📊</div>
+      <div class="diff-card-chip">Transparence</div>
+      <div class="diff-card-title">Reporting mensuel détaillé</div>
+      <p class="diff-card-desc">Rapport complet chaque mois : taux d'occupation, revenus générés, avis reçus, interventions effectuées. Zéro surprise, totale clarté.</p>
+      <div class="diff-card-metric">
+        <div><div class="diff-metric-val">12×</div><div class="diff-metric-lbl">Rapports par an</div></div>
+        <div style="color:var(--or);font-size:20px">→</div>
+      </div>
+    </div>
+
+    <div class="diff-card">
+      <div class="diff-card-num">06</div>
+      <div class="diff-card-icon">⚡</div>
+      <div class="diff-card-chip">Réactivité</div>
+      <div class="diff-card-title">Disponible 7j/7</div>
+      <p class="diff-card-desc">Une urgence à 22h ? Un voyageur qui a oublié ses clés ? Audrey est joignable et réactive à tout moment. Vos voyageurs ne sont jamais seuls.</p>
+      <div class="diff-card-metric">
+        <div><div class="diff-metric-val">7j/7</div><div class="diff-metric-lbl">Disponibilité</div></div>
+        <div style="color:var(--or);font-size:20px">→</div>
+      </div>
+    </div>
+
+    <div class="diff-card">
+      <div class="diff-card-num">07</div>
+      <div class="diff-card-icon">🤝</div>
+      <div class="diff-card-chip">Relation</div>
+      <div class="diff-card-title">Une interlocutrice dédiée</div>
+      <p class="diff-card-desc">Pas de call center, pas de rotation. Audrey connaît votre bien par cœur et vous répond personnellement. Une vraie relation de confiance.</p>
+      <div class="diff-card-metric">
+        <div><div class="diff-metric-val">1</div><div class="diff-metric-lbl">Interlocutrice dédiée</div></div>
+        <div style="color:var(--or);font-size:20px">→</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="diff-dots" id="DIFF_DOTS"></div>
+</section>
+
+<!-- ══ REVENUS AVANT / APRÈS ══ -->
+<section class="section section-beige">
+  <div class="revenue-grid">
+    <div class="rv-l">
+      <div class="s-tag">Comparatif revenus</div>
+      <h2 class="s-title">Combien rapporte<br/>votre bien <em>réellement ?</em></h2>
+      <p class="s-desc">La différence entre une gestion autonome et une gestion professionnelle par Audrey Conciergerie peut atteindre plusieurs milliers d'euros par an. Découvrez le potentiel inexploité de votre bien.</p>
+      <div class="revenue-features">
+        <div class="rev-feature">
+          <div class="rev-feature-icon">🎯</div>
+          <div><div class="rev-feature-name">Tarification dynamique</div><div class="rev-feature-desc">Nos prix s'adaptent en temps réel selon la demande, les événements locaux et la saisonnalité pour maximiser chaque nuit.</div></div>
+        </div>
+        <div class="rev-feature">
+          <div class="rev-feature-icon">📸</div>
+          <div><div class="rev-feature-name">Annonces premium</div><div class="rev-feature-desc">Photos professionnelles, descriptifs optimisés en 4 langues, diffusion sur toutes les plateformes (Airbnb, Booking, VRBO…).</div></div>
+        </div>
+        <div class="rev-feature">
+          <div class="rev-feature-icon">📅</div>
+          <div><div class="rev-feature-name">Taux d'occupation optimal</div><div class="rev-feature-desc">Calendrier géré stratégiquement pour éviter les trous et maximiser le taux d'occupation tout au long de l'année.</div></div>
+        </div>
+      </div>
+      <div style="margin-top:32px">
+        <a href="contact.html" class="btn-or"><span>✦ Estimer mes revenus potentiels</span></a>
+      </div>
+    </div>
+    <div class="rv-r">
+      <div class="revenue-visual">
+        <div class="rev-badge">
+          <div class="rev-badge-val">+42%</div>
+          <div class="rev-badge-lbl">en moyenne</div>
+        </div>
+        <div class="revenue-bars">
+          <div class="rev-bar-row">
+            <div class="rev-bar-label">
+              <span>Sans gestion professionnelle</span>
+              <span class="val" style="color:var(--txl)">1 200 € / mois</span>
+            </div>
+            <div class="rev-bar-track"><div class="rev-bar-fill before" data-width="52%"></div></div>
+          </div>
+          <div class="rev-bar-row">
+            <div class="rev-bar-label">
+              <span>Avec Audrey Conciergerie</span>
+              <span class="val" style="color:var(--or)">1 704 € / mois</span>
+            </div>
+            <div class="rev-bar-track"><div class="rev-bar-fill after" data-width="74%"></div></div>
+          </div>
+          <div style="height:32px"></div>
+          <div class="rev-bar-row">
+            <div class="rev-bar-label">
+              <span>Taux d'occupation moyen (avant)</span>
+              <span class="val" style="color:var(--txl)">61%</span>
+            </div>
+            <div class="rev-bar-track"><div class="rev-bar-fill before" data-width="61%"></div></div>
+          </div>
+          <div class="rev-bar-row">
+            <div class="rev-bar-label">
+              <span>Taux d'occupation (après)</span>
+              <span class="val" style="color:var(--or)">89%</span>
+            </div>
+            <div class="rev-bar-track"><div class="rev-bar-fill after" data-width="89%"></div></div>
+          </div>
+          <div style="margin-top:28px;padding:20px 24px;background:var(--or4);border:1px solid var(--bdor)">
+            <div style="font-family:var(--fd);font-size:14px;color:var(--or);font-style:italic;margin-bottom:6px">Exemple simulé pour un appartement 2 pièces à Paris</div>
+            <div style="font-size:12px;color:var(--txm);line-height:1.7">Les résultats varient selon la localisation, le type de bien et la période. Contactez-nous pour une estimation personnalisée.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION CONFIANCE ══ -->
+<section class="section">
+  <div class="section-center">
+    <div class="s-tag rv">Nos engagements</div>
+    <h2 class="s-title rv">Les raisons de nous<br/><em>faire confiance</em></h2>
+  </div>
+  <div class="trust-grid">
+    <div class="trust-item rv-s">
+      <div class="trust-icon">🔐</div>
+      <div class="trust-title">Zéro frais cachés</div>
+      <p class="trust-desc">Commission transparente sur les revenus générés. Vous ne payez que si vous gagnez. Aucune surprise, contrat clair et lisible.</p>
+    </div>
+    <div class="trust-item rv-s">
+      <div class="trust-icon">📲</div>
+      <div class="trust-title">Suivi en temps réel</div>
+      <p class="trust-desc">Accès à votre tableau de bord personnel pour suivre réservations, revenus et avis clients à tout moment, depuis votre téléphone.</p>
+    </div>
+    <div class="trust-item rv-s">
+      <div class="trust-icon">🧹</div>
+      <div class="trust-title">Ménage certifié hôtelier</div>
+      <p class="trust-desc">Notre équipe de ménage suit les standards hôteliers 4 étoiles. Linge de maison premium fourni. Votre bien toujours impeccable.</p>
+    </div>
+    <div class="trust-item rv-s">
+      <div class="trust-icon">📋</div>
+      <div class="trust-title">État des lieux systématique</div>
+      <p class="trust-desc">Photos détaillées avant et après chaque séjour. En cas de dommage, notre procédure de remboursement est rapide et efficace.</p>
+    </div>
+    <div class="trust-item rv-s">
+      <div class="trust-icon">🌍</div>
+      <div class="trust-title">Présence multi-plateformes</div>
+      <p class="trust-desc">Votre annonce diffusée sur Airbnb, Booking.com, Abritel, VRBO et plus encore. Visibilité maximale pour un taux d'occupation optimal.</p>
+    </div>
+    <div class="trust-item rv-s">
+      <div class="trust-icon">💬</div>
+      <div class="trust-title">Communication proactive</div>
+      <p class="trust-desc">Vous êtes informé à chaque étape : réservations, arrivées, départs, incidents. Jamais de surprise, toujours en accord avec vos attentes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA FINAL ══ -->
+<div class="cta-band">
+  <div class="cta-band-content rv">
+    <h2>Votre bien mérite<br/><em>le meilleur.</em></h2>
+    <p>Recevez votre estimation gratuite sous 24h. Sans engagement, sans frais cachés.</p>
+    <div class="cta-band-actions">
+      <a href="contact.html" class="btn-or"><span>✦ Recevoir mon estimation gratuite</span></a>
+      <a href="services.html" class="btn-wh"><span>Voir nos formules</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">Audrey Conciergerie</div>
+      <div class="footer-brand-sub">Conciergerie Premium</div>
+      <p class="footer-brand-desc">Votre partenaire de confiance pour une gestion locative d'excellence. Sérénité totale, revenus maximisés.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="biens.html">Nos Biens</a>
+      <a href="apropos.html">À Propos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="services.html">Gestion locative</a>
+      <a href="services.html">Optimisation revenus</a>
+      <a href="services.html">Conciergerie voyageurs</a>
+      <a href="services.html">Maintenance & ménage</a>
+      <a href="services.html">Reporting mensuel</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+33780786725" class="footer-phone">07 80 78 67 25</a>
+      <a href="contact.html">Demander un devis</a>
+      <a href="contact.html">Estimation gratuite</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Audrey Conciergerie — Tous droits réservés</span>
+    <div class="footer-legal">
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">CGV</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
